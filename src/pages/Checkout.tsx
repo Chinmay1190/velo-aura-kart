@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Header } from '@/components/Header';
@@ -48,7 +47,13 @@ function CheckoutContent() {
     // Simulate payment processing
     setTimeout(() => {
       setIsProcessing(false);
-      navigate('/payment-success');
+      navigate('/payment-success', {
+        state: {
+          formData,
+          items: state.items,
+          total: state.total
+        }
+      });
     }, 2000);
   };
 
