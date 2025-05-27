@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
@@ -7,7 +6,7 @@ import { CartProvider, useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, Download, Mail, Truck, Home, Printer, Star, Gift, Sparkles } from 'lucide-react';
+import { CheckCircle, Download, Mail, Truck, Home, Printer, Star, Gift, Sparkles, Shield } from 'lucide-react';
 
 function PaymentSuccessContent() {
   const { dispatch } = useCart();
